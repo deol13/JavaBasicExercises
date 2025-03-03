@@ -1,4 +1,3 @@
-import java.util.Date;
 import java.util.Scanner;
 import java.time.LocalDateTime; // Import the LocalDateTime class
 import java.time.format.DateTimeFormatter; // Import the DateTimeFormatter class
@@ -12,46 +11,46 @@ public class BasicExercisesPartOne
         myInputObj = new Scanner(System.in);
     }
 
-    public void RunExercises()
+    public void runExercises()
     {
-        //ExerciseOne();
-        //ExerciseTwo();
-        //ExerciseThree();
-        //ExerciseFour();
-        //ExerciseFive();
-        //ExerciseSix();
-        //ExcerciseSeven();
-        //ExerciseEight();
-        //ExerciseNine();
-        //ExerciseTen();
-        //ExerciseEleven();
-        //ExerciseTwelve();
-        //ExerciseThirteen();
-        ExerciseFifteen();
+        //exerciseOne();
+        //exerciseTwo();
+        //exerciseThree();
+        //exerciseFour();
+        //exerciseFive();
+        //exerciseSix();
+        //excerciseSeven();
+        //exerciseEight();
+        //exerciseNine();
+        //exerciseTen();
+        //exerciseEleven();
+        //exerciseTwelve();
+        //exerciseThirteen();
+        exerciseFifteen();
 
     }
 
-    private int TakeAnInput()
+    private int takeAnInput()
     {
         System.out.println("Input a number:");
         return myInputObj.nextInt();
     }
 
-    public void ExerciseOne()
+    public void exerciseOne()
     {
         System.out.println("Hello \n  Dennis D");
     }
-    public void ExerciseTwo()
+    public void exerciseTwo()
     {
         int result = 74 + 36;
         System.out.println("Exercise 2:" + result);
     }
-    public void ExerciseThree()
+    public void exerciseThree()
     {
         int result = 50 / 3;
         System.out.println("Exercise 3:" + result);
     }
-    public void ExerciseFour()
+    public void exerciseFour()
     {
         int num1 = -5 +8 * 6;
         int num2 = (55+9) % 9;
@@ -64,24 +63,24 @@ public class BasicExercisesPartOne
         System.out.println(num3);
         System.out.println(num4);
     }
-    public void ExerciseFive()
+    public void exerciseFive()
     {
-        int num1 = TakeAnInput();
-        int num2 = TakeAnInput();
+        int num1 = takeAnInput();
+        int num2 = takeAnInput();
         System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
     }
-    public void ExerciseSix()
+    public void exerciseSix()
     {
-        int num1 = TakeAnInput();
-        int num2 = TakeAnInput();
+        int num1 = takeAnInput();
+        int num2 = takeAnInput();
         System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
         System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
         System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
         System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
     }
-    public void ExcerciseSeven()
+    public void excerciseSeven()
     {
-        int num1 = TakeAnInput();
+        int num1 = takeAnInput();
         System.out.println(num1 + " * 1 = " + num1);
         System.out.println(num1 + " * 2 = " + (num1 * 2));
         System.out.println(num1 + " * 3 = " + (num1 * 3));
@@ -93,41 +92,41 @@ public class BasicExercisesPartOne
         System.out.println(num1 + " * 9 = " + (num1 * 9));
         System.out.println(num1 + " * 10 = " + (num1 * 10));
     }
-    public void ExerciseEight()
+    public void exerciseEight()
     {
         System.out.println("   J    a   v     v  a ");
         System.out.println("   J   a a   v   v  a a");
         System.out.println("J  J  aaaaa   V V  aaaaa");
         System.out.println(" JJ  a     a   V  a     a");
     }
-    public void ExerciseNine()
+    public void exerciseNine()
     {
         System.out.println(((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5)));
     }
-    public void ExerciseTen()
+    public void exerciseTen()
     {
         System.out.println((4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7)+ (1.0/9) - (1.0/11))));
     }
-    public void ExerciseEleven()
+    public void exerciseEleven()
     {
         double radius = 7.5;
         System.out.println("Parimeter is = " + (2 * Math.PI * radius));
         System.out.println("Area is = " + (radius * radius * Math.PI));
     }
-    public void ExerciseTwelve()
+    public void exerciseTwelve()
     {
-        int num1 = TakeAnInput();
-        int num2 = TakeAnInput();
-        int num3 = TakeAnInput();
+        int num1 = takeAnInput();
+        int num2 = takeAnInput();
+        int num3 = takeAnInput();
         System.out.println("The average of the three numbers is : " + (num1 + num2 + num3) / 3);
     }
-    public void ExerciseThirteen()
+    public void exerciseThirteen()
     {
         double width = 5.5, height = 8.5;
          System.out.println("Area is " + width + " * " + height + " = " + width * height);
          System.out.println("Parimeter is 2 * (" + width + " + " + height + ") = " + 2 * (width + height));
     }
-    public void ExerciseFifteen()
+    public void exerciseFifteen()
     {
         LocalDateTime myDateObj = LocalDateTime.now();
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E MMM dd, yyyy HH:mm:ss");
